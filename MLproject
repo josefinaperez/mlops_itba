@@ -1,0 +1,12 @@
+name: EDA RS
+
+conda_env: files/config/conda_environment.yaml
+
+entry_points:
+  main:
+    command: "python EDA.py"
+
+  baselines:
+    parameters:
+      p: {type: float, default: 0.5}
+    command: "python baselines.py --p {p}"

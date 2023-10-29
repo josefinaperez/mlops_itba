@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/josefinaperez/Desktop/mlops_itba/mlruns/0/8d8543f58e61421da639949fb2dba6f9/artifacts
+end_time: 1698620431047
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 8d8543f58e61421da639949fb2dba6f9
+run_name: thundering-squid-255
+run_uuid: 8d8543f58e61421da639949fb2dba6f9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698620429381
+status: 4
+tags: []
+user_id: josefinaperez

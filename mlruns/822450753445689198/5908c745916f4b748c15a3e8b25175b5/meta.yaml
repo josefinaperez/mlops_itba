@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/josefinaperez/Desktop/mlops_itba/mlruns/822450753445689198/5908c745916f4b748c15a3e8b25175b5/artifacts
+end_time: 1698620963575
+entry_point_name: ''
+experiment_id: '822450753445689198'
+lifecycle_stage: active
+run_id: 5908c745916f4b748c15a3e8b25175b5
+run_name: traveling-fly-833
+run_uuid: 5908c745916f4b748c15a3e8b25175b5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698620391228
+status: 3
+tags: []
+user_id: josefinaperez
