@@ -26,11 +26,12 @@ df_personas["year of birth"] = df_personas["year of birth"].apply(lambda x:int(x
 #Grafico el histograma de scores
 fig = plt.figure(figsize=(9,3))
 plt.hist(df_scores.rating, bins=5)
-plt.title(f"Histograma de los ratings. Promedio = {df_scores.rating.mean()}")
+#plt.title(f'Histograma de los ratings. Promedio =')
+#{df_scores.rating.mean()}
 mlflow.log_figure(fig, "Histograma ratings.png")
 
 # %%
-# Voy a buscar correlación entre fecha de nacimiento/género y score
+# Voy a buscar correlacion entre fecha de nacimiento/genero y score
 df_merge = df_scores.merge(df_personas,left_on="user_id", right_on="id")
 df_mean = df_merge.groupby(["year of birth", "Gender"]).rating.mean().reset_index()
 fig = plt.figure(figsize=(9,3))
@@ -38,9 +39,9 @@ df_mean.query("Gender == 'M'").set_index("year of birth").rating.plot(label="Mal
 df_mean.query("Gender == 'F'").set_index("year of birth").rating.plot(label="Female")
 plt.legend()
 plt.ylabel("Rating")
-mlflow.log_figure(fig, "Rating promedio por año.png")
+mlflow.log_figure(fig, "Rating promedio por anio.png")
 # %%
-# Guardo como métrica el score promedio
+# Guardo como metrica el score promedio
 mlflow.log_metric("Avg Score", df_scores.rating.mean(),)
 mlflow.log_metric("Min Score", df_scores.rating.min())
 mlflow.log_metric("Max Score", df_scores.rating.max())
